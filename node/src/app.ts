@@ -1,7 +1,7 @@
 import express from "express"
 import routerUser from "../src/route/user.routes"
 import { handleErrorMiddleware } from "./middleware/handleError.middleware"
-import cors from "cors"
+import "dotenv/config"
 
 const app = express()
 
@@ -15,6 +15,5 @@ app.use(express.json())
 app.use("/", routerUser)
 app.use(handleErrorMiddleware)
 
-// app.use(cors());
 
-app.listen(3000)
+app.listen(process.env.SERVER_PORT)

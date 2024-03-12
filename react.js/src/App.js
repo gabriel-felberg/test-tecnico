@@ -8,7 +8,7 @@ function App() {
   const { User } = useContext(UserContext)
   return (<>
     <ActionBar />
-    <main className="flex gap-5 min-h-screen flex-col py-10 sm:mx-10 sm:items-stretch">
+    <main className="flex gap-5 min-h-screen flex-col py-10 sm:mx-10 sm:items-stretch ">
       <div className="flex flex-row gap-5 flex-wrap">
         {User?.map((elem) => {
           return <CardUser key={elem.id} user={elem} />

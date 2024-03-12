@@ -24,12 +24,6 @@ Esta é uma aplicação simples em React.js construída com as seguintes ferrame
 
 Para executar este projeto localmente, siga estas etapas:
 
-## Clone este repositório em sua máquina local
-
-  ````
-  git clone https://github.com/gabriel-felberg/test-tecnico.git
-  ````
-
 ## Instale as dependências usando npm ou yarn
 
   ````
@@ -41,3 +35,17 @@ Para executar este projeto localmente, siga estas etapas:
   ````
   yarn install
   ````
+
+## Execute o projeto
+
+  ````
+  npm start
+  ````
+
+  ou
+
+  ````
+  yarn start
+  ````
+
+## Tudo certo agora é só abrir o google na seguinte url: <http://localhost:3001/>

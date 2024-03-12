@@ -32,12 +32,12 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   
 
   const fetchequenceUsersFunction = async (): Promise<any> => {
-    const response = await axios.get<IUserType[]>('http://localhost:3000/sequence/');
+    const response = await axios.get<IUserType[]>('http://localhost:3001/sequence/');
     setFetchSequenceUsers(response.data)
   };
 
   const fetchUsers = async (searchUser?: ISearchUser) => {
-    const response = await axios.get<IUserType[]>('http://localhost:3000', { params: searchUser });
+    const response = await axios.get<IUserType[]>('http://localhost:3001', { params: searchUser });
     setUsers(response.data);
   };
 

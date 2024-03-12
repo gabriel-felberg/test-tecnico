@@ -28,7 +28,7 @@ export default function ContentModal({ isOpen, onClose }: ModalProps) {
             cellphone: data.cellphone,
             coordinate: `(${data.coordinateX},${data.coordinateY})`
         }
-        axios.post("http://localhost:3000/", objectUser).then(() => {
+        axios.post("http://localhost:3001/", objectUser).then(() => {
             fetchUsers()
             onClose()
         });
